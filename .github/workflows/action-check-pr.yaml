@@ -38,6 +38,6 @@ jobs:
     steps:
       - name: Add Labels
         if: github.event.pull_request.draft == false # 드래프트가 아닐 경우에만 실행
-        uses: actions/add-labels@v1
+        uses: actions-ecosystem/action-add-labels@v1 # 라벨 추가 액션
         with:
           labels: ${{ github.event.pull_request.base.ref == 'dev' && 'dev' || github.event.pull_request.base.ref == 'main' && 'main'}} # dev로 머지 시 dev 라벨, main으로 머지 시 main 라벨
