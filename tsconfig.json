@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6", // 대상 자바스크립트 버전
+    "module": "ESNext", // 모듈 시스템
+    "jsx": "react", // JSX 문법
+    "strict": true, // 엄격한 타입 검사
+    "allowJs": true, // JS 문법 허용
+    "esModuleInterop": true, // ES 모듈 상호 운용
+    "skipLibCheck": true, // 라이브러리 체크 건너뛰기
+    "forceConsistentCasingInFileNames": true, // 파일 이름 일관성 강제
+    "baseUrl": ".", // 기본 경로
+    "paths": {
+      "@/*": ["src/*"] // 경로 별칭
+    }
+  },
+  "include": ["src/**/*"], // 소스 파일 포함
+  "exclude": ["node_modules", "build"] // 제외할 폴더
+}
