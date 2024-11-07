@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
-    "lint": "eslint --fix .",
+    "lint": "eslint .",
     "dev": "cross-env NODE_ENV=development webpack serve --open",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
-    "start:dev": "npm run build:dev && node dist/bundle.js",
-    "start:prod": "npm run build:prod && node dist/bundle.js"
+    "start:dev": "npm run build:dev && serve -s build",
+    "start:prod": "npm run build:prod && serve -s build"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +32,7 @@
     "@typescript-eslint/parser": "^8.13.0",
     "babel-loader": "^9.2.1",
     "eslint": "^9.14.0",
+    "eslint-define-config": "^2.1.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "html-webpack-plugin": "^5.6.3",
