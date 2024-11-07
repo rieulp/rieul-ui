@@ -16,3 +16,21 @@
 ## 컴포넌트 목록
 
 ## 디렉토리 구조
+
+```md
+프로젝트 루트/
+├── node_modules/
+├── src/ # 소스 파일 디렉토리
+│ ├── components/ # React 컴포넌트
+│ ├── styles/ # 스타일 파일 (CSS, SCSS 등)
+│ ├── utils/ # 유틸리티 함수
+│ ├── index.tsx # 애플리케이션 진입점
+│ └── App.tsx # 주요 React 컴포넌트
+├── .gitignore # Git 무시 파일 목록
+├── package.json # 프로젝트 메타데이터 및 의존성
+├── tsconfig.json # TypeScript 설정 파일
+├── webpack.config.js # Webpack 설정 파일
+├── .eslintrc.js # ESLint 설정 파일
+├── .prettierrc # Prettier 설정 파일
+└── README.md # 프로젝트 설명 문서
+```
