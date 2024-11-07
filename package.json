@@ -10,8 +10,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve --open",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
-    "start:dev": "npm run build:dev && node dist/bundle.js",
-    "start:prod": "npm run build:prod && node dist/bundle.js"
+    "start:dev": "npm run build:dev && serve -s build",
+    "start:prod": "npm run build:prod && serve -s build"
   },
   "keywords": [],
   "author": "",
