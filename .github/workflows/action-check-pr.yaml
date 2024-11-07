@@ -4,9 +4,9 @@ on:
   pull_request:
     types: [opened, edited, synchronize, reopened, ready_for_review]
 
-  permissions:
-    pull-requests: write # PR에 대한 쓰기 권한 부여
-    issues: write # 이슈에 대한 쓰기 권한 부여 (라벨 추가를 위한)
+permissions:
+  pull-requests: write # PR에 대한 쓰기 권한 부여
+  issues: write # 이슈에 대한 쓰기 권한 부여 (라벨 추가를 위한)
 
 jobs:
   check:
