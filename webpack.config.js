@@ -7,16 +7,19 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     clean: true, // 이전 빌드 파일 삭제
   },
   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
     extensions: ['.ts', '.tsx', '.js', '.jsx'], // 처리할 파일 확장자
   },
   module: {
     rules: [
       {
-        test: /\.tsx?$/, // 타입스크립트 파일 처리
+        test: /\.tsx?$/, // 타입스크립트 파일 처리 ts, tsx
         use: 'ts-loader',
         exclude: /node_modules/,
       },
@@ -25,7 +28,7 @@ module.exports = {
   mode: process.env.NODE_ENV || 'development',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html', // 기본 HTML 템플릿
+      template: './public/index.html', // 기본 HTML 템플릿
     }),
   ],
   devtool: process.env.NODE_ENV === 'development' ? 'source-map' : false, // 소스 맵
