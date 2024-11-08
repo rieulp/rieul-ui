@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
+
       - name: Install pnpm
         run: npm install -g pnpm # pnpm을 전역으로 설치
 
