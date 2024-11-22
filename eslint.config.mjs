@@ -1,5 +1,6 @@
 import { defineConfig } from 'eslint-define-config';
 import reactPlugin from 'eslint-plugin-react';
+
 import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
 export default defineConfig([

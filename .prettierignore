@@ -1,0 +1,25 @@
+# Node_modules
+node_modules/
+
+# 빌드 출력 파일
+dist/
+build/
+
+# 환경 파일
+.env
+.env.local
+
+# 로그 파일
+*.log
+
+# Git 디렉터리
+.git/
+
+# 특정 파일 또는 디렉터리
+public/
+coverage/
+
+# scripts
+*.yaml
+
+# Prettier 적용 제외할 코드 파일

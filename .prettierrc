@@ -3,5 +3,9 @@
   "singleQuote": true,
   "trailingComma": "none",
   "tabWidth": 2,
-  "printWidth": 120
+  "printWidth": 120,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^react", "<THIRD_PARTY_MODULES>", "^@storybook/(.*)$", "^@/(.*)$", "^[./]", "type"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
