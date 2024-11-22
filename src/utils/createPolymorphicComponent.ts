@@ -1,4 +1,5 @@
-import { forwardRef, ElementType } from 'react';
+import { ElementType, forwardRef } from 'react';
+
 import { PolymorphicComponent, PolymorphicRenderFunction } from './\btypes/polymorphicTypes';
 
 /**
