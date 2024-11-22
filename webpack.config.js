@@ -28,6 +28,10 @@ module.exports = {
           }
         ],
         exclude: /node_modules/ // node_modules 디렉토리 제외
+      },
+      {
+        test: /\.css$/, // CSS 파일 처리
+        use: ['style-loader', 'css-loader', 'postcss-loader'] // PostCSS 로더 추가
       }
     ]
   },
